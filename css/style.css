@@ -1,5 +1,12 @@
 body{
-		max-width: 1200px;
+	max-width: 1200px;
 		margin: 0 auto;
 		padding: 0 ;
 	}
+ul.menu li{
+	display: inline;
+		margin-left: 50px;
+}
+h1{
+	text-align: center; 
+}
