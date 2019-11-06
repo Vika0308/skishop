@@ -1,12 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Indie+Flower&display=swap');
+
+:root{
+	font-family: 'Crimson Text', serif;
+	--main-color: black;
+	--accent-color: black;
+}
+.logo{
+    font-family: 'Indie Flower', cursive;
+    font-size: 4rem;
+    text-align: left;
+    margin-bottom: -1rem;  
+
+}
 body{
 	max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 ;
+	margin: auto;
+	padding: 0 ;
+	outline: 1px solid #000;
 	}
+header nav .search{
+	display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    justify-content: space-around;
+    margin-bottom: -2rem;
+    margin-left: -5rem;  
+    font-size: 20px;
+    display: inline;
+	margin-left: 100px;
+}
+header nav .menu {
+	display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    justify-content: space-around;
+    margin-bottom: -1rem;
+    margin-left: -5rem;  
+    font-size: 20px;
+}
+header nav .menu a{
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 2px;
+}
+header nav .menu a:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.search input{
+	border-radius: 5px;
+	width: 200px; 
+    height: 25px;
+}
+.search{
+	position: relative;
+	right: 50px;
+}
+.search i{
+	position: absolute;
+	top: 5px;
+	right: 5%;
+	color: grey;
+}
+header .banner{
+    background-image: url(../img/mountains.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+}
+header .banner h1{
+	font-family: 'Crimson Text', serif;
+    font-size: 5rem;
+    word-spacing: 50px;
+    color: black;
+    margin: 5rem;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
 ul.menu li{
 	display: inline;
-		margin-left: 50px;
+		margin-left: 100px;
 }
+@media (min-width: 550px){
+    header nav{
+        display: flex;
+        align-items: center;
+ } 
 h1{
 	text-align: center; 
 }

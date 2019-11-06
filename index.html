@@ -5,61 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>skis4you</title>
 </head>
 <body>
     <header>
-    	<form>
-        <p><input type="search" name="search" placeholder="search">
-    	</form>
-    	<nav>
+    	<nav class="navigation">
+    		<div class="logo">SkiShop</div>
+    		<div class="search">
+    			<input type="search" name="search" placeholder="search...">
+				<i class="fa fa-search"></i>
+			</div>
 			<ul class="menu">
 				<li><a href="#Home">HOME</a></li>
 				<li><a href="#Categories">CATEGORIES</a></li>
 				<li><a href="#Contacts">CONTACTS</a></li>
+				<li><i class="fa fa-shopping-basket"></i></li>
 			</ul>
     	</nav>
+    	<div class="banner">
+            <h1>Your Choice</h1>
+        </div>
 	</header>
-    	<p><img src="img/mountains.jpeg" alt="mountains" width="1200"></p>
-    	<div id="Categories">
+	<main>
+    	<p id="Categories"></p>
         <h1>Categories</h1>
-        <figure>
-            <img src="img/carving.jpg" alt="Carving skiing" width="550" height="400">
-            <figcaption><h2>Carving Skis</h2></figcaption>
-        </figure>
-        <figure>
-            <img src="img/racing.jpg" alt="Racing skiing" width="550" height="400">
-            <figcaption><h2>Racing Skis</h2></figcaption>
-        </figure>
-        <figure>
-            <img src="img/powder.jpg" alt="Powder skiing" width="550" height="400">
-            <figcaption><h2>Powder Skis</h2></figcaption>
-        </figure>
-        <figure>
-            <img src="img/all.jpg" alt="Skiing" width="550" height="400">
-            <figcaption><h2>All Mountains Skis</h2></figcaption>
-        </figure>
-    </div>
-    <div>
+        <div>
+        	<figure>
+           	 	<img src="img/carving.jpg" alt="Carving skiing" width="550" height="400">
+            	<figcaption><h2>Carving Skis</h2></figcaption>
+        	</figure>
+    	</div>
+    	<div>
+        	<figure>
+           	 	<img src="img/racing.jpg" alt="Racing skiing" width="550" height="400">
+            	<figcaption><h2>Racing Skis</h2></figcaption>
+        	</figure>
+        </div>
+        <div>
+        	<figure>
+            	<img src="img/powder.jpg" alt="Powder skiing" width="550" height="400">
+            	<figcaption><h2>Powder Skis</h2></figcaption>
+        	</figure>
+        </div>
+        <div>
+        	<figure>
+            	<img src="img/all.jpg" alt="Skiing" width="550" height="400">
+            	<figcaption><h2>All Mountains Skis</h2></figcaption>
+        	</figure>
+    	</div>
     	<h1>Bestsellers</h1>
-    	<figure>
-            <img src="img/Atomic.jpg" alt="atomic" width="250" height="250">
-            <figcaption><h2>Atomic Redster S9<br>FIS SL Skis<br>$750.00</h2></figcaption>
-        </figure>
-        <figure>
-            <img src="img/Fischer.jpg" alt="fischer" width="250" height="250">
-            <figcaption><h2>Fischer RC4<br>WC FIS SL Skis 
-			<br>$840.00</h2></figcaption>
-        </figure>
-        <figure>
-            <img src="img/Head.jpg" alt="head" width="250" height="250">
-            <figcaption><h2>HEAD Worldcup Rebels<br>i.Speed RP GS Skis<br> $975.00</h2></figcaption>
-        </figure>
-        <figure>
-            <img src="img/atomic-vantage.jpg" alt="atomic" width="250" height="250">
-            <figcaption><h2>Atomic Vantage X 80<br>CTI+FT 12 GW F80<br>$350.00</h2></figcaption>
-        </figure>
-    </div>
+    	<div>
+    		<figure>
+            	<img src="img/Atomic.jpg" alt="atomic" width="250" height="250">
+            	<figcaption><h2>Atomic Redster S9<br>FIS SL Skis<br>$750.00</h2></figcaption>
+        	</figure>
+     	</div>
+     	<div>
+        	<figure>
+           		<img src="img/Fischer.jpg" alt="fischer" width="250" height="250">
+            	<figcaption><h2>Fischer RC4<br>WC FIS SL Skis 
+				<br>$840.00</h2></figcaption>
+        	</figure>
+        </div>
+        <div>
+        	<figure>
+            	<img src="img/Head.jpg" alt="head" width="250" height="250">
+            	<figcaption><h2>HEAD Worldcup Rebels<br>i.Speed RP GS Skis<br> $975.00</h2></figcaption>
+        	</figure>
+        </div>
+        <div>
+        	<figure>
+            	<img src="img/atomic-vantage.jpg" alt="atomic" width="250" height="250">
+            	<figcaption><h2>Atomic Vantage X 80<br>CTI+FT 12 GW F80<br>$350.00</h2></figcaption>
+        	</figure>
+   		</div>
+	</main>
     <div id="Contacts">
     	<h1>Contacts</h1>
     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.474098580445!2d11.391213715618692!3d47.265986079163596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d6bfb411502b5%3A0xd543cf4579fc885a!2zTWFyaWEtVGhlcmVzaWVuLVN0cmHDn2UgMTIsIDYwMjAgSW5uc2JydWNrLCDQkNCy0YHRgtGA0ZbRjw!5e0!3m2!1suk!2sua!4v1572805393351!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
