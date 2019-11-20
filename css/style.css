@@ -5,66 +5,66 @@
 	--main-color: black;
 	--accent-color: black;
 }
-.logo{
-    font-family: 'Indie Flower', cursive;
-    font-size: 4rem;
-    text-align: left;
-    margin-bottom: -1rem;  
 
+h1, h2, h3, p, div, nav, header, footer {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: white; 
 }
 body{
-	max-width: 1200px;
-	margin: auto;
-	padding: 0 ;
-	outline: 1px solid #000;
-	}
-header nav .search{
-	display: inline-flex;
-    list-style-type: none;
-    padding: 0;
-    text-align: right;
-    justify-content: space-around;
-    margin-bottom: -2rem;
-    margin-left: -5rem;  
-    font-size: 20px;
-    display: inline;
-	margin-left: 100px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 ;
+    color: white;
+    background-color: #12151c;
+    outline: 1px solid #000;
+    }
+
+header{
+    background-color: white;
 }
+
+header nav .logo{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3.5rem;
+    text-align: left;
+    color: black;
+}
+
 header nav .menu {
-	display: inline-flex;
+    display: flex;
     list-style-type: none;
-    padding: 0;
-    text-align: right;
     justify-content: space-around;
-    margin-bottom: -1rem;
-    margin-left: -5rem;  
-    font-size: 20px;
+    padding: 0;
+    font-size: 25px;
+    color: black;
 }
-header nav .menu a{
+
+header nav .menu a {
     text-decoration: none;
     color: var(--main-color);
     border: 1px solid transparent;
-    padding: 2px;
+    padding: 5px;
 }
+
 header nav .menu a:hover {
     border: 1px solid var(--accent-color);
 }
 
-.search input{
-	border-radius: 5px;
-	width: 200px; 
-    height: 25px;
+@media (min-width: 580px){
+    header nav{
+        display: flex;
+        align-items: center;
+    }
 }
-.search{
-	position: relative;
-	right: 50px;
+header .menu{
+    flex:1;
+     margin: 0px;
 }
-.search i{
-	position: absolute;
-	top: 5px;
-	right: 5%;
-	color: grey;
-}
+
 header .banner{
     background-image: url(../img/mountains.jpeg);
     background-position: center;
@@ -75,25 +75,145 @@ header .banner{
     justify-content: center;
     min-height: 500px;
 }
+
 header .banner h1{
-	font-family: 'Crimson Text', serif;
+    font-family: 'Crimson Text', serif;
     font-size: 5rem;
     word-spacing: 50px;
     color: black;
     margin: 5rem;
     margin-top: 15%;
     margin-left: 10%;
+    margin-bottom: 2rem;
 }
 
-ul.menu li{
-	display: inline;
-		margin-left: 100px;
-}
-@media (min-width: 550px){
-    header nav{
-        display: flex;
-        align-items: center;
- } 
 h1{
-	text-align: center; 
+    text-align: center;
+    padding: 10px;
+
+}
+main .category article{
+    margin:0 15px 5px;
+}
+main .category article img{
+    display: block;
+    max-width: 100%;
+}
+
+main .category article .inscription{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+@media (min-width: 580px) {
+    main .category {
+        display: grid;
+    }
+}
+
+@media (min-width: 700px) {
+    main .category{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+section {
+    text-align: center;
+}
+
+section .goods article img{
+    max-width: 100%;
+ }
+
+ article{
+    padding: 10px;
+ }
+
+.goods{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1000px) {
+    section .goods{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .best, section{
+        display: none;
+    }
+}
+#Contacts{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    #Contacts{
+        flex-flow: column-wrap;
+    }
+}
+div.map, div.location{
+    margin: 30px; 
+}
+iframe {
+    width: 600px;
+    height: 400px;
+}
+
+div.location{
+    font-size: 30px;
+}
+.input-form {
+    text-align:right;
+    line-height:20px;
+    margin: 10px 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: 25px;
+    font-weight:bolder;
+    margin-bottom: 15px;
+}
+label{
+    float:left;
+    padding: 10px;
+}
+input {
+    width: 450px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #12151c;
+    border-color: white;
+}
+textarea{
+    width: 450px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #12151c;
+    border-color: white;
+}
+input[type=submit] {
+    width: 200px;
+    height: 35px;
+    background-color: white;
+    text-transform: uppercase;
+    float:right;
+    margin: 0px 10px;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: white; 
+}
+footer img{
+    margin: 0 15px;
 }

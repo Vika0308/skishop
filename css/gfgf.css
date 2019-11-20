@@ -1,0 +1,217 @@
+header nav .search{
+	display: flex;
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    justify-content: space-around;
+    
+    font-size: 20px;
+    display: inline;
+    margin-left: 100px;
+}
+
+header nav .search{
+    display: flex;
+    display: inline-block;
+}
+
+<div class="search">
+    			<input type="search" name="search" placeholder="search...">
+				<i class="fa fa-search"></i>
+</div>
+
+body{
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 ;
+	outline: 1px solid #000;
+	}
+
+header nav .navigation{
+   
+}
+
+header nav .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    font-size: 20px;
+}
+header nav .menu a{
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 6px;
+}
+header nav .menu a:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.search input{
+	border-radius: 5px;
+	width: 200px; 
+    height: 25px;
+}
+
+header .banner{
+    background-image: url(../img/mountains.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+}
+header .banner h1{
+	font-family: 'Crimson Text', serif;
+    position: relative;
+    font-size: 5rem;
+    word-spacing: 50px;
+    color: black;
+    margin: 5rem;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+ul.menu li{
+    display: inline;
+        margin-left: 100px;
+}
+
+@media (min-width: 550px){
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 550px){
+    div .banner h1{
+        display: flex;
+		font-size: 80px;
+		 } 
+ }
+ @media screen and (max-width: 380px){
+	div .banner h1{
+		font-size: 40px;
+ }
+}
+
+h1{
+	text-align: center; 
+}
+
+
+@media (min-width: 800px) {
+    main div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 580px) {
+    main div{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+}
+
+===================================================
+<figure class="category">
+           	 	<img src="img/carving.jpg" alt="Carving skiing">
+            	<figcaption><h2>Carving Skis</h2></figcaption>
+        	</figure>
+    	</div>
+    	<div>
+        	<figure class="category">
+           	 	<img src="img/racing.jpg" alt="Racing skiing">
+            	<figcaption><h2>Racing Skis</h2></figcaption>
+        	</figure>
+        </div>
+        <div>
+        	<figure class="category">
+            	<img src="img/powder.jpg" alt="Powder skiing">
+            	<figcaption><h2>Powder Skis</h2></figcaption>
+        	</figure>
+        </div>
+        <div>
+        	<figure class="category">
+            	<img src="img/all.jpg" alt="Skiing">
+            	<figcaption><h2>All Mountains Skis</h2></figcaption>
+        	</figure>
+
+
+  =====================================
+
+  main .category article img{
+    display: block;
+    height: 400px;
+    width: 550px;
+    background-position: center;
+}
+
+main .category article .inscription {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+    main .category{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 10px;
+    }
+}
+
+@media (max-width: 580px){
+    main .category {
+    grid-template-columns: 1fr;
+    }
+}
+
+section img{
+    height: 250px;
+    width: 250px;
+}
+
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: 25px;
+    font-weight:bolder;
+}
+
+label, input{
+    margin: 3px 40px; 
+
+}
+
+label{
+    float:left;
+}
+input {
+    width: 450px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+textarea{
+    width: 450px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+
+
+.........................
+@media (max-width: 580px) {
+    section .goods {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
