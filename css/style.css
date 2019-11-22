@@ -50,6 +50,21 @@ header nav .menu a {
     padding: 5px;
 }
 
+li {
+    list-style: none;
+}
+}
+.menu{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    display: none;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+
 header nav .menu a:hover {
     border: 1px solid var(--accent-color);
 }
@@ -89,11 +104,11 @@ header .banner h1{
 
 h1{
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 
 }
 main .category article{
-    margin:0 15px 5px;
+    margin:0 15px;
 }
 main .category article img{
     display: block;
@@ -116,7 +131,6 @@ main .category article .inscription{
 @media (min-width: 700px) {
     main .category{
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
     }
 }
 
@@ -149,22 +163,19 @@ section .goods article img{
         display: none;
     }
 }
-#Contacts{
-    display: flex;
-    align-items: center;
-}
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
     #Contacts{
-        flex-flow: column-wrap;
+        display: grid;
+        grid-template-columns: 6fr 4fr;
     }
 }
 div.map, div.location{
     margin: 30px; 
 }
 iframe {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    min-height: 300px;
 }
 
 div.location{
